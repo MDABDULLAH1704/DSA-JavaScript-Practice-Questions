@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document 13</title>
+</head>
+
+<body>
+    <!-- JavaScript Booleans, JavaScript Comparison and Logical Operators -->
+
+
+    <!-- The Boolean() Function -->
+    <!-- You can use the Boolean() function to find out if an expression (or a variable) is true :- -->
+    <h1>JavaScript Booleans</h1>
+    <p>Display the value of Boolean(10 > 9):</p>
+
+    <p id="demo"></p>
+
+    <script>
+        // document.getElementById("demo").innerHTML = Boolean(10 > 9);
+        document.getElementById("demo").innerHTML = 10 > 9;
+    </script>
+
+
+    <!-- Everything With a "Value" is True -->
+    <h1>JavaScript Booleans</h1>
+    <p id="demo2"></p>
+
+    <script>
+        document.getElementById("demo2").innerHTML =
+            "100 is " + Boolean(100) + "<br>" +
+            "3.14 is " + Boolean(3.14) + "<br>" +
+            "-15 is " + Boolean(-15) + "<br>" +
+            "Any (not empty) string is " + Boolean("Hello") + "<br>" +
+            "Even the string 'false' is " + Boolean('false') + "<br>" +
+            "Any expression (except zero) is " + Boolean(1 + 7 + 3.14);
+    </script>
+
+
+    <!-- Everything Without a "Value" is False -->
+    <h1>JavaScript Booleans</h1>
+    <p>Display the Boolean value of 0:</p>
+
+    <p id="demo3">1</p>
+    <p id="demo4">2</p>
+    <p id="demo5">3</p>
+    <p id="demo6">4</p>
+    <p id="demo7">5</p>
+
+    <script>
+        let x = 0;
+        document.getElementById("demo3").innerHTML = Boolean(x);
+        let x2 = -0;
+        document.getElementById("demo4").innerHTML = Boolean(x2);
+        let x3 = "";
+        document.getElementById("demo5").innerHTML = Boolean("");
+        let x4 = null;
+        document.getElementById("demo6").innerHTML = Boolean(x4);
+        let x5 = 10 / "Hello";
+        document.getElementById("demo7").innerHTML = Boolean(x5);
+    </script>
+
+
+    <!-- JavaScript Booleans as Objects -->
+    <h1>JavaScript Booleans</h1>
+    <p>Booleans and Boolean objects cannot be safely compared:</p>
+
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+
+    <script>
+        // x is a boolean
+        let x6 = false;
+        // y is an object
+        let y6 = new Boolean(false);
+
+        document.getElementById("demo8").innerHTML = typeof x6 + "<br>" + typeof y6;
+
+        let x7 = false;         // x is a Boolean
+        let y7 = new Boolean(false);  // y is an object
+        document.getElementById("demo9").innerHTML = (x7 === y7);
+    </script>
+
+
+    <!-- Note:- -->
+    <!-- Comparing two JavaScript objects always return false -->
+
+
+
+
+    <!-- JavaScript Comparison and Logical Operators -->
+
+
+    <!-- Comparison Operators -->
+    <!-- Comparison and Logical operators are used to test for true or false. -->
+    <h1>JavaScript Comparison</h1>
+    <h2>The == Operator</h2>
+
+    <p>Assign 5 to x, and display the value of the comparison (x == 5):</p>
+
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+
+    <script>
+        let x8 = 5;
+        document.getElementById("demo10").innerHTML = (x8 == 5);
+        let x9 = 5;
+        document.getElementById("demo11").innerHTML = (x9 == "5");
+        let x10 = 5;
+        document.getElementById("demo12").innerHTML = (x10 === 5);
+        let x11 = 5;
+        document.getElementById("demo13").innerHTML = (x11 != 8);
+        let x12 = 5;
+        document.getElementById("demo14").innerHTML = (x12 !== 5);
+        let x13 = 5;
+        document.getElementById("demo15").innerHTML = (x13 >= 6);
+    </script>
+
+
+    <!-- Logical Operators -->
+    <h1>JavaScript Comparison</h1>
+    <h2>The && Operator (Logical AND)</h2>
+    <p>The && operator returns true if both expressions are true, otherwise it returns false.</p>
+
+    <p id="demo16"></p>
+    <hr>
+    <p id="demo17"></p>
+
+    <script>
+        let x14 = 6;
+        let y14 = 3;
+
+        document.getElementById("demo16").innerHTML =
+            (x14 < 10 && y14 > 1) + "<br>" +
+            (x14 < 10 && y14 < 1);
+
+        let x15 = 6;
+        let y15 = 3;
+        document.getElementById("demo17").innerHTML = !(x15 === y15) + "<br>" + !(x15 > y15);
+    </script>
+
+
+    <!-- Conditional (Ternary) Operator -->
+    <h1>JavaScript Comparison</h1>
+    <h2>The () ? : Ternary Operator</h2>
+
+    <p>Input your age and click the button:</p>
+
+    <input id="age" value="18" />
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo18"></p>
+
+    <script>
+        function myFunction() {
+            let age = document.getElementById("age").value;
+            let voteable = (age < 18) ? "Too young" : "Old enough";
+            document.getElementById("demo18").innerHTML = voteable + " to vote.";
+        }
+    </script>
+
+
+    <!-- Comparing Different Types -->
+    <h2>JavaScript Comparison</h2>
+
+    <p id="demo19"></p>
+    <p id="demo20"></p>
+
+    <script>
+        document.getElementById("demo19").innerHTML = 2 < "12";
+        document.getElementById("demo20").innerHTML = "2" > "12";
+    </script>
+
+
+    <!-- The Nullish Coalescing Operator (??) -->
+
+    <!-- The ?? operator returns the first argument if it is not nullish (null or undefined)
+    Otherwise it returns the second argument. -->
+
+    <h1>JavaScript Operators</h1>
+    <h2>The ?? Operator</h2>
+    <p>The ?? operator returns the first argument if it is not nullish (null or undefined). Otherwise it returns the
+        second.</p>
+
+    <p id="demo21"></p>
+
+    <script>
+        let name = null;
+        let text = "missing";
+        let result = name ?? text;
+        document.getElementById("demo21").innerHTML = "The name is " + result; 
+    </script>
+
+
+    <!-- The Optional Chaining Operator (?.) -->
+
+    <!-- The ?. operator returns undefined if an object is undefined or null (instead of throwing an error). -->
+
+    <h1>JavaScript Operators</h1>
+    <h2>The ?. Operator</h2>
+    <p>The ?. operator returns undefined if an object is undefined or null (instead of throwing an error).</p>
+
+    <p>Car name is:</p>
+    <p id="demo22"></p>
+
+    <script>
+        const car = { type: "Fiat", model: "500", color: "white" };
+        // let names = car?.names;
+        let names = car?.type;
+        document.getElementById("demo22").innerHTML = names;
+    </script>
+
+
+
+</body>
+
+</html>
