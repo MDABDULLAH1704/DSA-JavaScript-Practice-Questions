@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document 15</title>
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+
+        h2 {
+            background-color: rgb(255, 53, 53);
+        }
+
+        p {
+            padding: 5px;
+            background-color: rgb(109, 109, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- JavaScript Break and Continue, JavaScript Iterables, JavaScript Sets, JavaScript Maps -->
+
+
+    <!-- The break statement "jumps out" of a loop.
+    The continue statement "jumps over" one iteration in the loop. -->
+
+
+    <!-- The Break Statement -->
+    <h2>JavaScript Loops 1</h2>
+
+    <p>A loop with a <b>break</b> statement.</p>
+    <p id="demo"></p>
+
+    <script>
+        let text = "";
+        for (let i = 0; i < 10; i++) {
+            if (i === 5) { break; }
+            text += "The number is " + i + "<br>";
+        }
+
+        document.getElementById("demo").innerHTML = text;
+    </script>
+
+
+    <!-- The Continue Statement -->
+    <h2>JavaScript Loops 2</h2>
+
+    <p>A loop with a <b>continue</b> statement.</p>
+    <p>A loop which will skip the step where i = 3.</p>
+    <p id="demo2"></p>
+
+    <script>
+        let text2 = "";
+        for (let i = 0; i < 10; i++) {
+            if (i === 3) { continue; }
+            text2 += "The number is " + i + "<br>";
+        }
+        document.getElementById("demo2").innerHTML = text2;
+    </script>
+
+
+    <!-- JavaScript Labels -->
+    <h2>JavaScript break</h2>
+
+    <p id="demo3"></p>
+
+    <script>
+        const cars = ["BMW", "Volvo", "Saab", "Ford", "Audi"];
+        let text3 = "";
+
+        ali: {
+            text3 += cars[0] + "<br>";
+            text3 += cars[1] + "<br>";
+            text3 += cars[2] + "<br>";
+            text3 += cars[3] + "<br>";
+            break ali;
+            text3 += cars[4] + "<br>";
+        }
+
+        document.getElementById("demo3").innerHTML = text3;
+    </script>
+
+
+
+
+    <!-- JavaScript Iterables -->
+
+    <!-- Iterating Over a String -->
+    <h2>JavaScript Iterables 1</h2>
+    <p>Iterate over a String:</p>
+    <p id="demo4"></p>
+
+    <script>
+        // Create a String
+        const name = "W3Schools";
+
+        // List all Elements
+        let text4 = "";
+        for (const x of name) {
+            text4 += x + "<br>";
+        }
+
+        document.getElementById("demo4").innerHTML = text4;
+    </script>
+
+
+    <!-- Iterating Over an Array -->
+    <h2>JavaScript Iterables 2</h2>
+    <p>Iterate over an Array:</p>
+    <p id="demo5"></p>
+
+    <script>
+        // Create aa Array
+        const letters = ["a", "b", "c", "d"];
+
+        // List all Elements
+        let text5 = "";
+        for (const x of letters) {
+            text5 += x + "<br>";
+        }
+
+        document.getElementById("demo5").innerHTML = text5;
+    </script>
+
+
+    <!-- Iterating Over a Set -->
+    <h2>JavaScript Iterables 3</h2>
+    <p>Iterate over a Set:</p>
+    <p id="demo6"></p>
+
+    <script>
+        // Create a Set
+        const letters6 = new Set(["a", "b", "c"]);
+
+        // List all Elements
+        let text6 = "";
+        for (const x of letters6) {
+            text6 += x + "<br>";
+        }
+
+        document.getElementById("demo6").innerHTML = text6;
+    </script>
+
+
+    <!-- Iterating Over a Map -->
+    <h2>JavaScript Iterables 4</h2>
+    <p>Iterate over a Map:</p>
+
+    <p id="demo7"></p>
+
+    <script>
+        // Create a Map
+        const fruits = new Map([
+            ["apples", 500],
+            ["bananas", 300],
+            ["oranges", 200]
+        ]);
+
+        // List all entries
+        let text7 = "";
+        for (const x of fruits) {
+            text7 += x + "<br>";
+        }
+
+        document.getElementById("demo7").innerHTML = text7;
+    </script>
+
+
+
+
+    <!-- JavaScript Sets -->
+
+    <!-- Essential Set Methods -->
+    <!-- Method                Description
+    new Set()             Creates a new Set
+    add()                 Adds a new element to the Set
+    delete()              Removes an element from a Set
+    has()                 Returns true if a value exists in the Set
+    forEach()             Invokes a callback for each element in the Set
+    values()              Returns an iterator with all the values in a Set
+
+    Property              Description
+    size                  Returns the number of elements in a Set -->
+
+
+    <!-- The new Set() Method -->
+    <h2>JavaScript Sets</h2>
+    <p>Create a Set from an Array:</p>
+    <p id="demo8"></p>
+
+    <script>
+        // Create a Set
+        // const letters8 = new Set(["a", "b", "c"]);        // Or
+
+        // The add() Method :-
+        // Add Values to the Set
+        const letters8 = new Set();
+        letters8.add("a");
+        letters8.add("b");
+        letters8.add("c");
+
+        // Display set.size
+        document.getElementById("demo8").innerHTML = letters8.size;
+    </script>
+
+
+
+
+    <!-- JavaScript Maps -->
+
+
+    <!-- Essential Map Methods -->
+    <!-- Method                       Description
+    new Map()                    Creates a new Map
+    set()                        Sets the value for a key in a Map
+    get()                        Gets the value for a key in a Map
+    delete()                     Removes a Map element specified by the key
+    has()                        Returns true if a key exists in a Map
+    forEach()                    Calls a function for each key/value pair in a Map
+    entries()                    Returns an iterator with the [key, value] pairs in a Map
+
+    Property                     Description
+    size                         Returns the number of elements in a Map -->
+
+
+    <!-- The new Map() Method -->
+    <!-- You can create a Map by passing an Array to the new Map() constructor :- -->
+    <h2>JavaScript Map Objects 1</h2>
+    <p>Creating a Map from an Array:</p>
+    <p id="demo9"></p>
+
+    <script>
+        // Create a Map
+        const fruits9 = new Map([
+            ["apples", 500],
+            ["bananas", 300],
+            ["oranges", 200]
+        ]);
+
+        // Set Map Values
+        fruits9.set("apples", 200);
+
+        document.getElementById("demo9").innerHTML = fruits9.get("apples");
+    </script>
+
+
+    <!-- The set() Method -->
+    <h2>JavaScript Map Objects 2</h2>
+    <p>Using Map.set():</p>
+
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+
+    <script>
+        // Create a Map
+        const fruits10 = new Map();
+
+        // Set Map Values
+        fruits10.set("apples", 500);
+        fruits10.set("bananas", 300);
+        fruits10.set("oranges", 200);
+
+        document.getElementById("demo10").innerHTML = fruits10.get("bananas");
+        // Set Map Size
+        document.getElementById("demo11").innerHTML = fruits10.size;
+    </script>
+
+
+    <!-- JavaScript Objects vs Maps -->
+
+    <!-- Differences between JavaScript Objects and Maps :-
+                        Object                                    Map
+    Iterable            Not directly iterable                     Directly iterable
+    Size                Do not have a size property               Have a size property
+    Key Types           Keys must be Strings (or Symbols)         Keys can be any datatype
+    Key Order           Keys are not well ordered                 Keys are ordered by insertion
+    Defaults            Have default keys                         Do not have default keys -->
+
+
+
+
+</body>
+
+</html>
