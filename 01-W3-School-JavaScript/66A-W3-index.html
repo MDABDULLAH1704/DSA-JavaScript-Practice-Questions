@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document 17</title>
+    <style>
+        body {
+            background-color: rgb(255, 46, 46);
+        }
+
+        h1 {
+            background-color: rgb(82, 82, 255);
+            padding: 5px;
+        }
+
+        h2 {
+            background-color: rgb(55, 255, 55);
+            padding: 5px;
+        }
+
+        p {
+            background-color: rgb(255, 255, 93);
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- JavaScript Scope, JavaScript Hoisting, JavaScript Use Strict Mode, this Keyword, Arrow Function -->
+
+
+
+
+    <!-- JavaScript Scope -->
+
+    <!-- Local Scope, Function Scope -->
+    <h2>JavaScript Scope 1</h2>
+
+    <p><b>carName</b> is undefined outside myFunction():</p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+        myFunction();
+
+        function myFunction() {
+            let carName = "Volvo";
+            document.getElementById("demo1").innerHTML = typeof carName + " , " + carName;
+        }
+
+        document.getElementById("demo2").innerHTML = typeof carName;
+    </script>
+
+
+    <!-- Global JavaScript Variables -->
+    <h2>JavaScript Scope 2</h2>
+
+    <p>A GLOBAL variable can be accessed from any script or function.</p>
+    <p id="demo3"></p>
+
+    <script>
+        let carName = "BMW";
+        myFunction();
+
+        function myFunction() {
+            document.getElementById("demo3").innerHTML = "I can display " + carName;
+        }
+    </script>
+
+
+    <!-- Automatically Global -->
+    <h2>JavaScript Global Variables 3</h2>
+    <p><b>If you assign a value to a variable that has not been declared, it will automatically become a GLOBAL
+            variable:</b></p>
+
+    <p id="demo4"></p>
+
+    <script>
+        myFunction();
+        // code here can use carName as a global variable
+        document.getElementById("demo4").innerHTML = "I can display " + carName;
+
+        function myFunction() {
+            carName = "Volvo";
+        }
+    </script>
+
+
+    <!-- Global Variables in HTML -->
+    <h2>JavaScript Scope 4</h2>
+
+    <p>In HTML, global variables defined with <b>var</b>, will become window variables.</p>
+    <p id="demo5"></p>
+
+    <script>
+        var carName5 = "Volvo";
+
+        // code here can use window.carName
+        document.getElementById("demo5").innerHTML = "I can display " + window.carName5;
+    </script>
+
+
+    <!-- Note -->
+    <!-- Do NOT create global variables unless you intend to.
+
+    Your global variables (or functions) can overwrite window variables (or functions).
+    Any function, including the window object, can overwrite your global variables and functions. -->
+
+
+
+
+    <!-- JavaScript Hoisting -->
+    <h2>Hoisting 1</h2>
+    <p id="demo6"></p>
+
+    <script>
+        x = 51; // Assign 5 to x
+
+        elem = document.getElementById("demo6"); // Find an element 
+        elem.innerHTML = x;           // Display x in the element
+
+        var x; // Declare x
+    </script>
+
+
+    <!-- Hoisting 1 -->
+    <h2>JavaScript Hoisting 1</h2>
+
+    <p>With <b>const</b>, you cannot use a variable before it is declared.</p>
+    <p>Try to remove the //.</p>
+    <p id="demo7"></p>
+
+    <script>
+        carName = "Volvo";
+        //const carName;
+        document.getElementById("demo7").innerHTML = carName;
+    </script>
+
+
+    <!-- Hoisting 2 -->
+    <h2>JavaScript Hoisting 2</h2>
+    <p id="demo8"></p>
+
+    <script>
+        var x = 5; // Initialize x
+        var y = 7; // Initialize y
+
+        elem = document.getElementById("demo8"); // Find an element 
+        elem.innerHTML = x + " , " + y;       // Display x and y
+    </script>
+
+
+
+
+    <!-- JavaScript Use Strict Mode -->
+
+    <!-- See From W3-School Website -->
+
+    <!-- Declaring Strict Mode -->
+    <h1>With "use strict":</h1>
+    <h2>Using a variable without declaring it, is not allowed.</h2>
+    <p>Activate debugging in your browser (F12) to see the error report.</p>
+
+    <script>
+        "use strict";
+        x = 3.14;  // This will cause an error (x is not defined).
+    </script>
+
+
+
+
+    <!-- The JavaScript this Keyword -->
+
+
+    <!-- this Keyword -->
+    <h1>The JavaScript <i>this</i> Keyword</h1>
+    <p>In this example, <b>this</b> refers to the <b>person</b> object.</p>
+    <p>Because <b>fullName</b> is a method of the person object.</p>
+    <p id="demo9"></p>
+
+    <script>
+        // Create an object:
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+            fullName: function () {
+                return this.firstName + " , " + this.lastName;
+            }
+        };
+
+        // Display data from the object:
+        document.getElementById("demo9").innerHTML = person.fullName();
+    </script>
+
+
+    <!-- What is this?   In JavaScript, the this keyword refers to an object. -->
+
+
+    <!-- this in a Method -->
+    <h1>The JavaScript <i>this</i> Keyword</h1>
+    <p>In this example, <b>this</b> refers to the <b>person</b> object.</p>
+    <p>Because <b>fullName</b> is a method of the person object.</p>
+    <p id="demo10"></p>
+
+    <script>
+        // Create an object:
+        const person10 = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+            fullName: function () {
+                return this.firstName + " " + this.lastName + " & " + this.id;
+            }
+        };
+
+        // Display data from the object:
+        document.getElementById("demo10").innerHTML = person10.fullName();
+    </script>
+
+
+    <!-- this in a Function (Default) -->
+    <h1>The JavaScript <i>this</i> Keyword</h1>
+
+    <p>In this example, <b>this</b> refers to the the window object:</p>
+    <p id="demo11"></p>
+
+    <script>
+        document.getElementById("demo11").innerHTML = myFunction();
+
+        function myFunction() {
+            return "Hi, this is Ali";
+        }
+    </script>
+
+
+    <!-- this in Event Handlers -->
+    <h1>The JavaScript <i>this</i> Keyword</h1>
+    <button onclick="this.style.display='none'">Click to Remove Me!</button>
+
+
+
+
+</body>
+
+</html>
