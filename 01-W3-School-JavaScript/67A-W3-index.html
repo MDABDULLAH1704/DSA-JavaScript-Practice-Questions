@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document 18</title>
+    <style>
+        body {
+            background-color: rgb(255, 46, 46);
+        }
+
+        h1 {
+            background-color: rgb(82, 82, 255);
+            padding: 5px;
+        }
+
+        h2 {
+            background-color: rgb(55, 255, 55);
+            padding: 5px;
+        }
+
+        p {
+            background-color: rgb(255, 255, 93);
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- JavaScript Arrow Function, JavaScript Classes, JavaScript Modules, JavaScript JSON -->
+
+
+
+
+    <!-- Arrow Function 1 -->
+    <h1>JavaScript Functions 1</h1>
+    <h2>The Arrow Function</h2>
+
+    <p>This example shows the syntax of an Arrow Function, and how to use it.</p>
+    <p id="demo"></p>
+
+    <script>
+        let myFunction = (a, b) => a * b;
+        document.getElementById("demo").innerHTML = myFunction(4, 5);
+    </script>
+
+
+    <!-- With Arrow Function: -->
+    <h1>JavaScript Functions 2</h1>
+    <h2>The Arrow Function</h2>
+
+    <p>This example shows the syntax of an Arrow Function, and how to use it.</p>
+    <p id="demo2"></p>
+
+    <script>
+        let hello = "";
+
+        hello = () => {
+            return "Hello World!";
+        }
+        // hello = () => "Hello World! 2";
+
+        document.getElementById("demo2").innerHTML = hello();
+    </script>
+
+
+    <!-- What About this? 1 -->
+    <h1>JavaScript "this" 1</h1>
+
+    <p>This example demonstrate that in a regular function, the "this" keyword represents different objects depending on
+        how the function was called.</p>
+    <p>Click the button to execute the "hello" function again, and you will see that this time "this" represents the
+        button object.</p>
+
+    <button id="btn">Click Me!</button>
+    <p id="demo3"></p>
+
+    <script>
+        let hello3 = "";
+
+        hello3 = function () {
+            document.getElementById("demo3").innerHTML += this;
+        }
+
+        //The window object calls the function:
+        window.addEventListener("load", hello3);
+
+        //A button object calls the function:
+        document.getElementById("btn").addEventListener("click", hello3);
+    </script>
+
+
+
+    <!-- What About this? 2 -->
+    <h1>JavaScript "this" 2</h1>
+
+    <p>This example demonstrate that in Arrow Functions, the "this" keyword represents the object that owns the
+        function, no matter who calls the function.</p>
+    <p>Click the button to execute the "hello" function again, and you will see that "this" still represents the window
+        object.</p>
+
+    <button id="btn2">Click Me!</button>
+    <p id="demo4"></p>
+
+    <script>
+        let hello4 = "";
+
+        hello4 = () => {
+            document.getElementById("demo4").innerHTML += this;
+        }
+
+        //The window object calls the function:
+        window.addEventListener("load", hello4);
+
+        //A button object calls the function:
+        document.getElementById("btn2").addEventListener("click", hello4);
+    </script>
+
+
+
+
+    <!-- JavaScript Classes -->
+
+    <!-- Using a Class -->
+    <h1>JavaScript Classes</h1>
+    <p>Creating two car objects from a car class:</p>
+    <p id="demo5"></p>
+
+    <script>
+        class Car {
+            constructor(name, year) {
+                this.name = name;
+                this.year = year;
+            }
+        }
+
+        const myCar1 = new Car("Ford", 2014);
+        const myCar2 = new Car("Audi", 2019);
+
+        document.getElementById("demo5").innerHTML =
+            myCar1.name + " & " + myCar2.name;
+    </script>
+
+
+    <!-- Class Methods 1 -->
+    <h1>JavaScript Class Methods 1</h1>
+    <p>How to define and use a Class method.</p>
+
+    <p id="demo6"></p>
+
+    <script>
+        class Car6 {
+            constructor(name, year) {
+                this.name = name;
+                this.year = year;
+
+            }
+            age() {
+                const date = new Date();
+                return date.getFullYear() - this.year;
+            }
+        }
+
+        const myCar6 = new Car6("Ford", 2014);
+        document.getElementById("demo6").innerHTML = "My car is " + myCar6.age() + " years old.";
+    </script>
+
+
+
+
+    <!-- JavaScript Modules -->
+
+    <!-- See From W3-School Website -->
+
+
+
+
+    <!-- JavaScript JSON -->
+
+    <!-- JSON is a format for storing and transporting data. JSON is often used when data is sent from a server to a web
+    page. -->
+
+    <!-- What is JSON?
+    JSON stands for JavaScript Object Notation
+    JSON is a lightweight data interchange format
+    JSON is language independent *
+    JSON is "self-describing" and easy to understand -->
+
+    <!-- JSON Syntax Rules :-
+    Data is in name/value pairs
+    Data is separated by commas
+    Curly braces hold objects
+    Square brackets hold arrays -->
+
+
+    <!-- JSON Data - A Name and a Value -->
+    <!-- "firstName":"John"
+    NOte :- JSON names require double quotes. JavaScript names do not. -->
+
+
+    <!-- JSON Objects -->
+    <!-- {"firstName":"John", "lastName":"Doe"} -->
+
+
+    <!-- JSON Arrays -->
+    <!-- 
+    "employees":[
+    {"firstName":"John", "lastName":"Doe"},
+    {"firstName":"Anna", "lastName":"Smith"},
+    {"firstName":"Peter", "lastName":"Jones"}
+    ] 
+    -->
+
+
+    <!-- Converting a JSON Text to a JavaScript Object -->
+    <!-- A common use of JSON is to read data from a web server, and display the data in a web page. -->
+
+    <!-- 
+    let text = '{ "employees" : [' +
+    '{ "firstName":"John" , "lastName":"Doe" },' +
+    '{ "firstName":"Anna" , "lastName":"Smith" },' +
+    '{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+
+    Then, use the JavaScript built-in function JSON.parse() to convert the string into a JavaScript object:
+
+    const obj = JSON.parse(text); 
+    -->
+
+
+
+    <!-- Create Object from JSON String -->
+    <h2>Create Object from JSON String</h2>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+
+    <script>
+        let text = '{"employees":[' +
+            '{"firstName":"John","lastName":"Doe" },' +
+            '{"firstName":"Anna","lastName":"Smith" },' +
+            '{"firstName":"Peter","lastName":"Jones" }]}';
+
+        const obj = JSON.parse(text);
+        document.getElementById("demo7").innerHTML = obj.employees[0].firstName + " " + obj.employees[0].lastName;
+        document.getElementById("demo8").innerHTML = obj.employees[1].firstName + " " + obj.employees[1].lastName;
+        document.getElementById("demo9").innerHTML = obj.employees[2].firstName + " " + obj.employees[2].lastName;
+        document.getElementById("demo10").innerHTML = obj.employees[0].firstName + " " + obj.employees[1].lastName;
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
