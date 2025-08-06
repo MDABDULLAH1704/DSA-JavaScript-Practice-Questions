@@ -35,7 +35,7 @@
 // let arr = [1, 2, 3, 4, 5];
 // console.log(arr.includes(2));
 
-// 38. Combine two arrays [1, 2] and [3, 4] using concat(). 
+// 38. Combine two arrays [1, 2] and [3, 4] using concat().
 // let arr1 = [1, 2];
 // let arr2 = [3, 4] ;
 // console.log(arr1.concat(arr2));
@@ -53,7 +53,7 @@
 //     }
 // }
 // console.log(arr);
-// Method 2 
+// Method 2
 // let arr = [5, 2, 9, 1, 7];
 // for (let i = 0; i < arr.length - 1; i++) {
 //     for (let j = 0; j < arr.length - 1 - i; j++) {
@@ -66,12 +66,12 @@
 // }
 // console.log(arr);
 
-// 40. Write a program that creates a copy of an array without mutating the original. 
-// Method 1 
+// 40. Write a program that creates a copy of an array without mutating the original.
+// Method 1
 // let arr = [1, 2, 3, 4, 5];
 // let arr2 = [...arr];
 // console.log(arr2);
-// Method 2 
+// Method 2
 // let arr = [1, 2, 3, 4];
 // let arr2 = [];
 // arr.forEach((val) => {

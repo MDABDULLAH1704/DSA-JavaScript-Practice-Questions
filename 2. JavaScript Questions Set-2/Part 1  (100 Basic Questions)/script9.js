@@ -185,8 +185,8 @@
 
 
 
-// 90. Create a program to check if an array is empty.   
-// Method 1               
+// 90. Create a program to check if an array is empty.
+// Method 1
 // function checkEmpty(arr) {
 //     if (arr.length === 0) {
 //         return 'Array is empty';

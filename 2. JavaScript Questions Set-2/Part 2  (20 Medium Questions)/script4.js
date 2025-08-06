@@ -1,5 +1,5 @@
-// 16. Write a javascript function to get the first element of an array. Passing a parameter 'n' will return the first 'n' elements of an array.   
-// Method 1 
+// 16. Write a javascript function to get the first element of an array. Passing a parameter 'n' will return the first 'n' elements of an array.
+// Method 1
 // function retrieve(arr, n) {
 //     if (arr == null) return undefined;
 //     if (n == null) {
@@ -9,7 +9,7 @@
 //     }
 // }
 // console.log(retrieve([1, 2, 3, 4, 5], 3));
-// Method 2   
+// Method 2
 // function retrieve(arr, n) {
 //     if (arr == null) return undefined;
 //     if (n == null) return arr[0];
@@ -19,11 +19,11 @@
 //     }
 //     return newArr;
 // }
-// console.log(retrieve([1, 2, 3, 4, 5]));
+// console.log(retrieve([1, 2, 3, 4, 5], 3));
 
 
 
-// 17. Write a javascript function to get the last element of an array. Passing a parameter 'n' will return the last 'n' elements of an array.   
+// 17. Write a javascript function to get the last element of an array. Passing a parameter 'n' will return the last 'n' elements of an array.
 // function retrieveLast(arr, n) {
 //     if (arr == null) return undefined;
 //     if (n == null) return arr[arr.length - 1];
@@ -39,7 +39,7 @@
 
 
 
-// 18. Write a javascript program to find the most frequent item of an array. (Hard level) 
+// 18. Write a javascript program to find the most frequent item of an array. (Hard level)
 // function findMostFrequent(arr) {
 //     let freq = {};
 //     arr.forEach((elem) => {
@@ -62,13 +62,13 @@
 
 
 
-// 19. Write a javascript program to shuffle an array.   
+// 19. Write a javascript program to shuffle an array.
 // function shuffle(arr) {
-//     // Find the shuffle area first   
+//     // Find the shuffle area first
 //     let totalShuffleArea = arr.length;
 //     while (totalShuffleArea > 0) {
 //         totalShuffleArea--;
-//         // Find a random number   
+//         // Find a random number
 //         let indexToBeExchange = Math.floor(Math.random() * totalShuffleArea);
 //         let temp = arr[totalShuffleArea];
 //         arr[totalShuffleArea] = arr[indexToBeExchange];
@@ -80,18 +80,36 @@
 
 
 
-// 20. Write a javascript program to compute the union of two arrays. 
-// Method 1 
+// 20. Write a javascript program to compute the union of two arrays.
+// Method 1
 // function unionOfTwoArr(arr1, arr2) {
 //     return [...new Set(arr1.concat(arr2))]
 //     // return [...new Set([...arr1, ...arr2])]
 // }
 // console.log(unionOfTwoArr([1, 2, 3], [2, 3, 4]));
-// Method 2   
-function unionOfTwoArr(arr1, arr2) {
-    let arr = arr1.concat(arr2);
-    let newArr = new Set(arr);
-    let result = [...newArr];
-    return result;
+// Method 2
+// function unionOfTwoArr(arr1, arr2) {
+//     let arr = arr1.concat(arr2);
+//     let newArr = new Set(arr);
+//     return newArr;
+// }
+// console.log(unionOfTwoArr([1, 2, 3], [2, 3, 4]));
+
+
+
+// 21. Number is Prime or Not
+function isPrime(n) {
+    if (n <= 1) {
+        console.log('Not Prime');
+        return;
+    }
+    // for (let i = 2; i <= Math.sqrt(n); i++) {
+    for (let i = 2; i < n; i++) {
+        if (n % i === 0) {
+            console.log('Not Prime');
+            return;
+        }
+    }
+    console.log('Prime');
 }
-console.log(unionOfTwoArr([1, 2, 3], [2, 3, 4]));
+isPrime(312);

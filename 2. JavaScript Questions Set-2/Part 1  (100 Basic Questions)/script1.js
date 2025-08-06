@@ -1,17 +1,17 @@
-// 1. Log your name and favorite hobby to the console.
+// 1. Log your name and favorite hobby to the console. 
 console.log("Ali", "become a software engineer");
 
 // 2. Perform and log the result of 45 * 2 - 10. 
 console.log("45 * 2 - 10 : ", 45 * 2 - 10);
 
-// 3. Use console.log to display the current year.
+// 3. Use console.log to display the current year. 
 const date = new Date();
 const year = date.getFullYear();
 console.log("Current Year : ", year);
 
 // 4. Create two variables for first and last name, concatenate them, and log the result.
 const firstName = "Ali";
-const lastName = "Khan";
+const lastName = "Babu";
 const fullName1 = firstName + " " + lastName;
 console.log("Full Name 1 : ", fullName1);
 const fullName2 = firstName.concat(" ", lastName);
@@ -41,4 +41,4 @@ if (age > 18) {
 }
 
 // 10. Log the result of 100/0 and observe the output.
-console.log(100/0);
+console.log(100 / 0);

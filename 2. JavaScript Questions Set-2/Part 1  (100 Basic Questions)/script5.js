@@ -11,8 +11,8 @@
 
 // 42. Create a function to calculate the area of a circle with a given radius.
 // function calArea(r) {
-// let area = Math.floor(Math.PI * r * r);
-//     let area = Math.round(Math.PI * r * r);
+//     let area = Math.floor(Math.PI * r * r);
+//     // let area = Math.round(Math.PI * r * r);
 //     console.log(area);
 // }
 // calArea(2);
@@ -67,7 +67,7 @@
 //     }
 //     console.log(newStr.join(""));
 // }
-// revString("AliBabu");
+// revString("AliBabu")
 
 // 48. Create a function to find the largest number in an array.
 // function findLargeNumInArr(arr) {
@@ -80,17 +80,17 @@
 //     }
 //     console.log(arr[max]);
 // }
-// findLargeNumInArr([8, 4, 2, 6, 0, 7]);
+// findLargeNumInArr([8, 4, 2, 6, 10, 7]);
 
 // 49. Write a function that convert a string to kebab-case.
 // function kebab(str) {
 // return str.split(' ').join('-');
-//     return str.replaceAll(' ', '-');
+//     // return str.replaceAll(' ', '-');
 // }
 // console.log(kebab('hey how are you.'));
 
-// 50. Create a function that log 'hello world' every time it is called.  
-function helloWorld() {
-    console.log('Hello World!');
-}
-helloWorld();
+// 50. Create a function that log 'hello world' every time it is called.
+// function helloWorld() {
+//     console.log('Hello World!');
+// }
+// helloWorld();

@@ -108,7 +108,7 @@
 // function retUniqueVal(arr) {
 //     return [...new Set(arr)];
 // }
-// console.log(retUniqueVal([1, 2, 3, 4, 1, 2]));
+// console.log(retUniqueVal([3, 2, 4, 1, 2, 0, 3, 1, 4, 2]));
 
 
 
@@ -153,7 +153,7 @@
 //     return count;
 // }
 // console.log(countWord('javascript'));
-// Method 2 :- To count word     
+// Method 2 :- To count word
 // function countWord(str) {
 //     let count = 0;
 //     let newStr = str.trim().split(/\s+/);
@@ -163,26 +163,26 @@
 //     return count;
 // }
 // console.log(countWord('hi how are you'));
-// Method 3 :- To count word       
+// Method 3 :- To count word
 // function countWord(str) {
 //     let newStr = str.trim().split(/\s+/);
 //     return newStr.length;
 // }
-// console.log(countWord('hi how are you'));
+// console.log(countWord('hi how are you all'));
 
 
 
-// 99. Write a program to toggle a button background color when clicked.             
+// 99. Write a program to toggle a button background color when clicked.
 
 
 
-// 100. Write a function to check if all elements in an array are greater than a specific value.           
-function checkValue(arr, val) {
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] <= val) {
-            return false;
-        }
-    }
-    return true;
-}
-console.log(checkValue([3, 4, 5], 2));
+// 100. Write a function to check if all elements in an array are greater than a specific value.
+// function checkValue(arr, val) {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] <= val) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+// console.log(checkValue([3, 4, 5], 2));

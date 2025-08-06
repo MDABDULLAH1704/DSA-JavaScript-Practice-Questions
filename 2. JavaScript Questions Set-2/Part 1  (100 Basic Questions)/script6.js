@@ -99,6 +99,9 @@
 
 // 59. Write a program to find the largest of three numbers using if else.
 // Method 1
+// let n1 = 12;
+// let n2 = 13;
+// let n3 = 13;
 // if (n1 === n2 && n2 === n3) {
 //     console.log('All numbers are equal');
 // } else if (n1 >= n2 && n1 >= n3) {
@@ -127,22 +130,22 @@
 //     console.log('There is a tie for the largest number');
 // }
 
-// 60. Create a program to calculate the discount based on the price of an item.   
-function calculateDiscount(price) {
-    let discount = 0;
+// 60. Create a program to calculate the discount based on the price of an item.
+// function calculateDiscount(price) {
+//     let discount = 0;
 
-    if (price > 100) {
-        discount = 0.2; // 20% discount for items over 100
-    } else if (price > 50) {
-        discount = 0.1; // 10% discount for items between 51 and 100
-    } else if (price > 0) {
-        discount = 0.05; // 5% discount for items 50 or less
-    }
+//     if (price > 100) {
+//         discount = 0.2; // 20% discount for items over 100
+//     } else if (price > 50) {
+//         discount = 0.1; // 10% discount for items between 51 and 100
+//     } else if (price > 0) {
+//         discount = 0.05; // 5% discount for items 50 or less
+//     }
 
-    const discountAmount = price * discount;
-    const finalPrice = price - discountAmount;
+//     const discountAmount = price * discount;
+//     const finalPrice = price - discountAmount;
 
-    return finalPrice;
-}
-console.log(calculateDiscount(200));
+//     return finalPrice;
+// }
+// console.log(calculateDiscount(150));
 

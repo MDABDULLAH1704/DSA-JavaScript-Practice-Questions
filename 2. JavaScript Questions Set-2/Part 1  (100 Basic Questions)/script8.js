@@ -43,8 +43,8 @@
 // console.log(indices);
 
 // 76. Replace 'JavaScript' with 'JS' in the string 'I love JavaScript'.    
-// let str = 'I love JavaScripT';
-// console.log(str.replace('JavaScripT', 'JS'));
+// let str = 'I love JavaScript';
+// console.log(str.replace('JavaScript', 'JS'));
 
 // 77. Repeat a string 3 times using .repeat().    
 // let str = 'javascript';

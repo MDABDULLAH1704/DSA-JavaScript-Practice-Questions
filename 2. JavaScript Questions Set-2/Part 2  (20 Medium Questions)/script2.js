@@ -27,6 +27,16 @@
 //     return rev;
 // }
 // console.log(revNumber(123));
+// Method 4 
+// function revNumber(val) {
+//     let result = val.toString().split('');
+//     for (let i = 0; i < Math.floor(result.length / 2); i++) {
+//         let j = result.length - 1 - i;
+//         [result[i], result[j]] = [result[j], result[i]];
+//     }
+//     console.log(Number(result.join('')));
+// }
+// revNumber(123456);
 
 
 
@@ -35,13 +45,13 @@
 // function checkPalindrome(str) {
 //     let arr = str.toLowerCase().split('');
 //     for (let i = 0; i < Math.floor(arr.length / 2); i++) {
-//         if (arr[i] === arr[arr.length - 1 - i]) {
-//             return true;
+//         if (arr[i] !== arr[arr.length - 1 - i]) {
+//             return false;
 //         }
 //     }
-//     return false;
+//     return true;
 // }
-// console.log(checkPalindrome('AabbccBBAa'));
+// console.log(checkPalindrome('AabbccBBa'));
 // Method 2
 // function checkPalindrome(str) {
 //     let reversed = str.toLowerCase().split('').reverse().join('');
@@ -77,7 +87,7 @@
 //     }
 //     return arr.join('');
 // }
-// console.log(retStrToAlphaOrder('dcba'));
+// console.log(retStrToAlphaOrder('abcd'));
 
 
 

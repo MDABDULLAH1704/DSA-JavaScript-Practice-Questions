@@ -12,8 +12,8 @@
 //     age: 20,
 //     city: 'Motihari'
 // }
-// obj.isStudent = true;
-// console.log(obj);
+// obj.isStudent = true,
+//     console.log(obj);
 
 // 63. Access and log the value of the city property using bracket notation.
 // let obj = {
@@ -39,10 +39,10 @@
 //     return Object.keys(obj);
 // }
 // console.log(showObjKeys({ name: 'Ali', age: 20 }));
-// function showObjKeys(obj) {
+// function showObjValues(obj) {
 //     return Object.values(obj);
 // }
-// console.log(showObjKeys({ name: 'Ali', age: 20 }));
+// console.log(showObjValues({ name: 'Ali', age: 20 }));
 
 // 66. Create an array of objects representing books with title and author properties.
 // let books = [
@@ -69,7 +69,7 @@
 // };
 // let result = Object.keys(obj).includes('age');
 // console.log(result);
-// Method 2       
+// Method 2
 // let obj = {
 //     name: 'Ali',
 //     age: 20,
@@ -111,13 +111,13 @@
 // console.log(countKeys(object));
 
 // 70. Use Object.assign() to merge two objects.
-let obj1 = {
-    name: 'Ali',
-    age: 20
-};
-let obj2 = {
-    city: 'Motihari',
-    country: 'India'
-};
-let newObj = Object.assign(obj1, obj2);
-console.log(newObj);
+// let obj1 = {
+//     name: 'Ali',
+//     age: 20
+// };
+// let obj2 = {
+//     city: 'Motihari',
+//     country: 'India'
+// };
+// let newObj = Object.assign(obj1, obj2);
+// console.log(newObj);

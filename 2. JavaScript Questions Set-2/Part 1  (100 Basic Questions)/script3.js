@@ -40,14 +40,14 @@
 // for (let i = 1; i <= 5; i++) {
 //     fact = fact * i;
 // }
-// console.log("Factorial of 5 : " ,fact);
+// console.log("Factorial of 5 : ", fact);
 
 // 27. Write a nested loop to print a 3x3 grid of numbers.
 // let hold = 1;
 // for (let i = 1; i <= 3; i++) {
 //     let str = "";
 //     for (let j = 1; j <= 3; j++) {
-//         str = str + hold; 
+//         str = str + hold;
 //         hold++;
 //     }
 //     console.log(str);
