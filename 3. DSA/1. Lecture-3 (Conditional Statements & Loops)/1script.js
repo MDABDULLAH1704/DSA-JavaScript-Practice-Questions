@@ -28,11 +28,11 @@
 
 
 // Q3. Print Factorial of a number N.
-function Factorial(n) {
-    let fact = 1;
-    for (let i = 1; i <= n; i++) {
-        fact = fact * i;
-    }
-    return fact;
-}
-console.log(Factorial(3));
+// function Factorial(n) {
+//     let fact = 1;
+//     for (let i = 1; i <= n; i++) {
+//         fact = fact * i;
+//     }
+//     return fact;
+// }
+// console.log(Factorial(3));
