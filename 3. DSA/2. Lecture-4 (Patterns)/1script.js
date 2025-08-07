@@ -1,19 +1,19 @@
-// Square pattern with number 
-// function printStars(m) {
+// Q1. Square pattern with number 
+// function pattern(m) {
 //     for (let i = 1; i <= m; i++) {
-//         let row = '';
+//         let col = '';
 //         for (let j = 1; j <= m; j++) {
-//             row += j;
+//             col = col + j;
 //         }
-//         console.log(row);
+//         console.log(col);
 //     }
 // }
-// printStars(4);
+// pattern(5);
 
 
 
-// Square pattern with star
-// function printStars(m) {
+// Q2. Square pattern with star
+// function pattern(m) {
 //     for (let i = 0; i < m; i++) {
 //         let row = '';
 //         for (let j = 0; j < m; j++) {
@@ -22,18 +22,19 @@
 //         console.log(row);
 //     }
 // }
-// printStars(5);
+// pattern(5);
 
 
 
-// Square pattern with character 
-// function printStars(m) {
+// Q3. Square pattern with character
+// function pattern(m) {
 //     for (let i = 0; i < m; i++) {
 //         let row = '';
 //         for (let j = 0; j < m; j++) {
-//             row += String.fromCharCode(65 + j); // 65 is 'A'            
+//             row += String.fromCharCode(65 + j); // 65 is 'A'
 //         }
 //         console.log(row);
 //     }
 // }
-// printStars(3);
+// pattern(3);
+

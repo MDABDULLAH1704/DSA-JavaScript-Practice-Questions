@@ -1,30 +1,31 @@
-// Square pattern with number increase by 1.    
-// function printStars(m) {
+// Q1. Square pattern with number increase by 1.
+// function pattern(m) {
 //     let num = 1;
 //     for (let i = 0; i < m; i++) {
-//         let row = '';
+//         let col = '';
 //         for (let j = 0; j < m; j++) {
-//             row = row + num;
+//             col = col + num;
 //             num++;
 //         }
-//         console.log(row);
+//         console.log(col);
 //     }
-//     console.log('After pattern :', num);
 // }
-// printStars(3);
+// pattern(4);
 
 
 
-// Square pattern with character increase by 1.    
-// function printStars(m) {
+// Q2. Square pattern with character increase by 1.
+// function pattern(m) {
 //     let num = 0;
 //     for (let i = 0; i < m; i++) {
-//         let row = '';
+//         let col = '';
 //         for (let j = 0; j < m; j++) {
-//             row = row + String.fromCharCode(65 + num);
+//             col = col + String.fromCharCode(65 + num);
 //             num++;
 //         }
-//         console.log(row);
+//         console.log(col);
 //     }
 // }
-// printStars(3);
+// pattern(3);
+
+
