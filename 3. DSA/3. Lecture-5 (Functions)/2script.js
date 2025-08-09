@@ -1,5 +1,5 @@
-// Q3. Calculate sum of digits of a number.  
-// Method 1      
+// Q3. Calculate sum of digits of a number.
+// Method 1
 // function sumOfDigit(n) {
 //     let arr = n.toString().split('');
 //     let sum = 0;
@@ -9,7 +9,8 @@
 //     console.log(sum);
 // }
 // sumOfDigit(12345);
-// Method 2     
+
+// Method 2
 // function sumOfDigit(n) {
 //     let sum = 0;
 //     while (n > 0) {
@@ -20,6 +21,3 @@
 //     console.log(sum);
 // }
 // sumOfDigit(1234);
-
-
-
