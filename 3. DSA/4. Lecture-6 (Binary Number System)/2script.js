@@ -10,5 +10,5 @@ function binaryToDecimal(n) {
     }
     return ans;
 }
-console.log(binaryToDecimal(1010));
+console.log(binaryToDecimal(1010)); 
 
