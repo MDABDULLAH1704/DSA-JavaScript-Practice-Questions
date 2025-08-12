@@ -1,7 +1,7 @@
-// Maximum SubArray Sum - Kadane's Algorithm           
-// Time Complexity - O(n)       
-function maxSumOfSubArr(arr) {
-    if (arr.length === 0) return 0; // handle empty array
+// Maximum SubArray Sum - Kadane's Algorithm            
+// Time Complexity - O(n)        
+function maxSumOfSubArr(arr) { 
+    if (arr.length === 0) return 0; // handle empty array 
     let currSum = 0;
     let maxSum = arr[0];
     for (let st = 0; st < arr.length; st++) {

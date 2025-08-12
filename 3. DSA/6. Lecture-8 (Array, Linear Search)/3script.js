@@ -5,7 +5,7 @@ function reverseArray(arr) {
     let start = 0;
     let end = arr.length - 1;
     while (start < end) {
-        [arr[start], arr[end]] = [arr[end], arr[start]]; // Swap using destructuring
+        [arr[start], arr[end]] = [arr[end], arr[start]]; // Swap using destructuring 
         start++;
         end--;
     }

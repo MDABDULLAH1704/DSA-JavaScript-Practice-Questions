@@ -1,5 +1,5 @@
 // Q1. Decimal to Binary Conversion.
-function decimalToBinary(n) { 
+function decimalToBinary(n) {
     let ans = 0;
     let pow = 1;
     while (n > 0) {

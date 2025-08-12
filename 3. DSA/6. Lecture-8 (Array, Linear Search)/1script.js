@@ -1,4 +1,4 @@
-// Q1. Find smallest in an array.     
+// Q1. Find smallest in an array.        
 function smallest(arr) {
     let small = arr[0];
     for (let i = 0; i < arr.length; i++) {
@@ -12,7 +12,7 @@ console.log('Smallest in array is', smallest([5, -15, 22, 24, 13]));
 
 
 
-// Q2. Find smallest in an array.     
+// Q2. Find smallest in an array.         
 function largest(arr) {
     let large = arr[0];
     for (let i = 0; i < arr.length; i++) {
