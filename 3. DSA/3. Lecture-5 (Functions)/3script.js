@@ -1,4 +1,4 @@
-// Q4. Calculate nCr (4C2) binomial coefficient for n & r.          
+// Q4. Calculate nCr (like 4C2) binomial coefficient for n & r.          
 function factorial(n) {
     let fact = 1;
     for (let i = 1; i <= n; i++) {

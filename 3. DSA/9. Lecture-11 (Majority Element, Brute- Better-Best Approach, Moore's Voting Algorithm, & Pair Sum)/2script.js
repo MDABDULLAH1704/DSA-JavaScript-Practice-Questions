@@ -17,6 +17,6 @@ function pairSum(arr, target) {
             return ans; // stop after finding first pair     
         }
     }
-    return ans;
+    return ans;     
 }
-console.log(pairSum([2, 7, 11, 15], 9));
+console.log(pairSum([2, 7, 9, 11, 15], 9));

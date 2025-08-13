@@ -5,7 +5,7 @@ function subArray(arr) {
         for (let end = st; end < arr.length; end++) {
             let line = '';
             for (let i = st; i <= end; i++) {
-                line += arr[i] + ' ';
+                line = line + arr[i] + ' ';
             }
             console.log(line);
         }

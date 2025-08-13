@@ -3,22 +3,18 @@
 // Method 1 : Brute Force       
 function majorityElement(arr) {
     let n = arr.length;
-
-    for (let val of arr) {
+    for (let i = 0; i < n; i++) {
         let freq = 0;
-
-        for (let el of arr) {
-            if (el === val) {
+        for (let j = 0; j < n; j++) {
+            if (arr[j] === arr[i]) {
                 freq++;
             }
         }
-
         if (freq > Math.floor(n / 2)) {
-            return val;
+            return arr[i];
         }
     }
-
-    // In case there is no majority element (though problem usually assumes one exists)
+    // In case there is no majority element
     return null;
 }
 

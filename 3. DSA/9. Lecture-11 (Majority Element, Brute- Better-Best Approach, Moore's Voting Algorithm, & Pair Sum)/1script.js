@@ -15,4 +15,4 @@ function pairSum(arr, target) {
     }
     return ans;
 }
-console.log(pairSum([2, 7, 12, 16, 20], 9));
+console.log(pairSum([2, 7, 12, 16, 20], 9)); 

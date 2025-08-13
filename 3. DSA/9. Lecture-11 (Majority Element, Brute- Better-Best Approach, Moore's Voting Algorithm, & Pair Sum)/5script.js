@@ -1,6 +1,6 @@
 // Q2. Majority ELements (169 LeetCode)             
-// Time Complexity : O(n logN)          
-// Method 3 : Moore's Voting Algorithm        
+// Time Complexity : O(n)          
+// Method 3 : Boyer-Moore's Voting Algorithm        
 function majorityElement(arr) {
     let freq = 0;
     let ans = 0;
@@ -9,6 +9,7 @@ function majorityElement(arr) {
         if (freq === 0) {
             ans = arr[i];
         }
+
         if (ans === arr[i]) {
             freq++;
         } else {
@@ -19,4 +20,4 @@ function majorityElement(arr) {
     return ans;
 }
 
-console.log(majorityElement([3, 2, 3]));          // 3
+console.log(majorityElement([2, 2, 3, 2, 3]));          // 3
