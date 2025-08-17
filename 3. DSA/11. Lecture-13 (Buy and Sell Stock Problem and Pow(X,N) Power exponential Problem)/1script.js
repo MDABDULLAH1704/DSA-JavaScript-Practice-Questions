@@ -24,4 +24,4 @@ function XPowerN(x, n) {
     }
     return ans;
 }
-console.log(XPowerN(3, 3));
+console.log(XPowerN(3, 4));
