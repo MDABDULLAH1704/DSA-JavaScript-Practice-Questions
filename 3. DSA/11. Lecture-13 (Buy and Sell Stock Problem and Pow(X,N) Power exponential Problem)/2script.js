@@ -11,5 +11,5 @@ function maxProfitFunc(price) {
         bestBuy = Math.min(bestBuy, price[i]);
     }
     return maxProfit;
-}
+}           
 console.log(maxProfitFunc([7, 1, 5, 3, 6, 4]));
