@@ -13,18 +13,18 @@ function rotatedSortedArray(arr, target) {
 
         if (arr[st] <= arr[mid]) { // Left Sorted
             if (arr[st] <= target && target <= arr[mid]) {
-                end = mid - 1;
+                end = mid - 1; // target lies in left half     
             }
             else {
-                st = mid + 1;
+                st = mid + 1; // target NOT in left half → go right    
             }
         }
         else { // Right Sorted
             if (arr[mid] <= target && target <= arr[end]) {
-                st = mid + 1;
+                st = mid + 1; // target lies in right half     
             }
             else {
-                end = mid - 1;
+                end = mid - 1; // target NOT in right half → go left        
             }
         }
     }
