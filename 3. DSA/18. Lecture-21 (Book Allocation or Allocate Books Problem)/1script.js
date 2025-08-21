@@ -1,4 +1,10 @@
-// Book Allocation Problem                        
+// Book Allocation Problem            
+// 🔎 Problem statement in simple words -           
+// We have an array of books where each element represents the number of pages in a book.     
+// We must allocate all books to m students such that :       
+// Each book should be allocated to a student.      
+// Each student has to be allocated at least one book.         
+// We want to minimize the maximum pages allocated to any student.         
 // Time Complexity : O(logN * n)                 
 
 // Helper function to check if allocation is possible
