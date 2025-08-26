@@ -13,6 +13,6 @@ function charStrReverse(str) {
     }
     return arr.join('');
 }
-console.log(charStrReverse('hello world 2'));
+console.log(charStrReverse('hello'));
 
 // Another method exist to solve this question, you have to take temp (temporary) variable then swap and also using destructuring.       
