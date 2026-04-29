@@ -94,10 +94,10 @@
 //     for (let i = 1; i <= lines; i++) {
 //         let pattern = '';
 //         for (let j = 1; j <= i; j++) {
-//             pattern += '* ';
+//             pattern += '*  ';
 //         }
-//         console.log(pattern.trim());
-//         // console.log(pattern);
+//         // console.log(pattern.trim());
+//         console.log(pattern);
 //     }
 // }
 // printPattern(4);

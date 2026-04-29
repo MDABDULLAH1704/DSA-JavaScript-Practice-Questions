@@ -45,7 +45,7 @@
 // function isElementInArray(arr) {
 //     for (const i of arr) {
 //         if (i === 'orange') {
-// console.log(i);   //
+//             console.log(i);   //
 //             return i;
 //         }
 //     }
@@ -87,15 +87,15 @@
 
 
 // Method 2
-function reverseArray(arr) {
-    let reversedArray = [];
+// function reverseArray(arr) {
+//     let reversedArray = [];
 
-    for (let i = arr.length - 1; i >= 0; i--) {
-        reversedArray.push(arr[i]);
-    }
-    return reversedArray;
-}
+//     for (let i = arr.length - 1; i >= 0; i--) {
+//         reversedArray.push(arr[i]);
+//     }
+//     return reversedArray;
+// }
 
-const naturalArray = [1, 2, 3, 4, 5];
-const reversedArray = reverseArray(naturalArray);
-console.log(reversedArray);
+// const naturalArray = [1, 2, 3, 4, 5];
+// const reversedArray = reverseArray(naturalArray);
+// console.log(reversedArray);

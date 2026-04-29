@@ -98,18 +98,18 @@
 
 
 // 21. Number is Prime or Not
-function isPrime(n) {
-    if (n <= 1) {
-        console.log('Not Prime');
-        return;
-    }
-    // for (let i = 2; i <= Math.sqrt(n); i++) {
-    for (let i = 2; i < n; i++) {
-        if (n % i === 0) {
-            console.log('Not Prime');
-            return;
-        }
-    }
-    console.log('Prime');
-}
-isPrime(312);
+// function isPrime(n) {
+//     if (n <= 1) {
+//         console.log('Not Prime');
+//         return;
+//     }
+//     // for (let i = 2; i <= Math.sqrt(n); i++) {
+//     for (let i = 2; i < n; i++) {
+//         if (n % i === 0) {
+//             console.log('Not Prime');
+//             return;
+//         }
+//     }
+//     console.log('Prime');
+// }
+// isPrime(311);

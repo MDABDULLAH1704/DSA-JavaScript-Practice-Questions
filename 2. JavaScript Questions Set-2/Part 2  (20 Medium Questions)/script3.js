@@ -12,6 +12,33 @@
 //     return occurrences;
 // }
 // console.log(checkOccurrences('apple'));
+// Method 2 
+// function checkOccurrences(str) {
+//     let occurrences = {};
+//     for (let ch of str) {
+//         if (Object.keys(occurrences).includes(ch)) {
+//             occurrences[ch]++;
+//         } else {
+//             occurrences[ch] = 1;
+//         }
+//     }
+//     return occurrences;
+// }
+// console.log(checkOccurrences('apple'));
+// Method 3 
+// function checkOccurrences(str) {
+//     let occurrences = {};
+//     for (let ch of str) {
+//         if (ch in occurrences) {
+//             occurrences[ch]++;
+//         } else {
+//             occurrences[ch] = 1;
+//         }
+//     }
+//     return occurrences;
+// }
+// console.log(checkOccurrences('apple'));
+
 
 
 
@@ -55,14 +82,14 @@
 
 
 // 14. Loop an array of objects and remove all objects which do not have gender's value male.
-let arr = [
-    { name: 'ali', gender: 'male' },
-    { name: 'zoya', gender: 'female' },
-    { name: 'fiza', gender: 'female' },
-    { name: 'zara', gender: 'female' },
-    { name: 'rohan', gender: 'male' },
-    { name: 'mohan', gender: 'male' }
-];
+// let arr = [
+//     { name: 'ali', gender: 'male' },
+//     { name: 'zoya', gender: 'female' },
+//     { name: 'fiza', gender: 'female' },
+//     { name: 'zara', gender: 'female' },
+//     { name: 'rohan', gender: 'male' },
+//     { name: 'mohan', gender: 'male' }
+// ];
 // Method 1
 // let newArr = arr.filter((elem) => {
 //     return elem.gender === 'male';
@@ -75,7 +102,7 @@ let arr = [
 //     }
 // }
 // console.log(arr);
-// Method 3 
+// Method 3
 // let result = [];
 // for (let person of arr) {
 //     if (person.gender === 'male') {

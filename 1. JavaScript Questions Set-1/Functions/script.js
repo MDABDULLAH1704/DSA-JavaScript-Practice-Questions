@@ -6,7 +6,7 @@
 //     return num1 + num2;
 // }
 
-// let result = sum(5, 3);
+// let result = sum(5, '3');
 // console.log(`Sum of your number is ${result}`);
 
 
@@ -71,21 +71,21 @@
 
 
 // 5. Write a JavaScript function that takes an array of strings as input and returns a new array containing only the strings that have more than three characters. If the input is not an array, return an appropriate error message.
-function stringMoreThan3Character(array) {
-    if (!Array.isArray(array)) {
-        return "Invalid input: Please provide an array of strings.";
-    }
+// function stringMoreThan3Character(array) {
+//     if (!Array.isArray(array)) {
+//         return "Invalid input: Please provide an array of strings.";
+//     }
 
-    let filteredString = [];
+//     let filteredString = [];
 
-    for (let i = 0; i < array.length; i++) {
-        if (array[i].length > 3) {
-            filteredString.push(array[i]);
-        }
-    }
-    return filteredString;
-}
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i].length > 3) {
+//             filteredString.push(array[i]);
+//         }
+//     }
+//     return filteredString;
+// }
 
-let arr = ["i", "am", "software", "engineer"];
-let result = stringMoreThan3Character(arr);
-console.log(result);
+// let arr = ["i", "am", "software", "engineer"];
+// let result = stringMoreThan3Character(arr);
+// console.log(result);

@@ -4,8 +4,8 @@
 // }
 
 // 22. Use a while loop to sum the numbers from 1 to 10.
-// let i = 1;
 // let sum = 0;
+// let i = 1;
 // while (i <= 10) {
 //     sum = sum + i;
 //     i++;
@@ -47,13 +47,13 @@
 // for (let i = 1; i <= 3; i++) {
 //     let str = "";
 //     for (let j = 1; j <= 3; j++) {
-//         str = str + hold;
+//         str = str + hold + '   ';
 //         hold++;
 //     }
 //     console.log(str);
 // }
 
-// 28. Use a for loop to reverse an array [1, 2, 3, 4].
+// 28. Use a for loop to reverse an array [1, 2, 3, 4, 5].
 // let arr = [1, 2, 3, 4, 5];
 // for (let i = 0; i < Math.floor(arr.length / 2); i++) {
 //     let temp = arr[i];
@@ -72,10 +72,10 @@
 // }
 
 // 30. Use a for...in loop to iterate over an object and log its keys.
-const obj = {
-    name: "Ali",
-    class: "10"
-}
-for (const key in obj) {
-    console.log(key);
-}
+// const obj = {
+//     name: "Ali",
+//     class: "10"
+// }
+// for (const key in obj) {
+//     console.log(key);
+// }

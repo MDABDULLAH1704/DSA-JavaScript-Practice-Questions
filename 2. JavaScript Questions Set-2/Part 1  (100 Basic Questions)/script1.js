@@ -7,7 +7,7 @@ console.log("45 * 2 - 10 : ", 45 * 2 - 10);
 // 3. Use console.log to display the current year. 
 const date = new Date();
 const year = date.getFullYear();
-console.log("Current Year : ", year);
+console.log("Current Year :", year);
 
 // 4. Create two variables for first and last name, concatenate them, and log the result.
 const firstName = "Ali";

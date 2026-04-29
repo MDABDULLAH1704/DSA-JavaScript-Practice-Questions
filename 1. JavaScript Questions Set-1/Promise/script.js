@@ -7,10 +7,10 @@
 //             resolve("Promise resolve");
 //         }
 //         else {
-//             console.log("Un-successful");
+//             console.log("Unsuccessful");
 //             reject("Promise reject");
 //         }
-//     }, 2000);
+//     }, 1500);
 // })
 
 // promise.then((result) => {
@@ -27,7 +27,7 @@
 //         setTimeout(() => {
 //             console.log("First operation completed.");
 //             resolve("Resolve-1 successful");
-//         }, 2000);
+//         }, 1000);
 //     })
 // }
 
@@ -36,7 +36,7 @@
 //         setTimeout(() => {
 //             console.log("Second operation completed.");
 //             resolve("Resolve-2 successful");
-//         }, 2000);
+//         }, 1000);
 //     })
 // }
 
@@ -56,19 +56,19 @@ let promise1 = new Promise((resolve, reject) => {
     setTimeout(() => {
         console.log("promise 1");
         resolve("resolve 1");
-    }, 2000);
+    }, 1000);
 })
 let promise2 = new Promise((resolve, reject) => {
     setTimeout(() => {
         console.log("promise 2");
         resolve("resolve 2");
-    }, 3000);
+    }, 2000);
 })
 let promise3 = new Promise((resolve, reject) => {
     setTimeout(() => {
         console.log("promise 3");
         resolve("resolve 3");
-    }, 4000);
+    }, 3000);
 })
 
 Promise.all([promise1, promise2, promise3])

@@ -17,7 +17,7 @@
 // arr.unshift(-1, 0);
 // console.log(arr);
 
-// 34. Remove the last element of an array and log the undated array.
+// 34. Remove the last element of an array and log the updated array.
 // let arr = [1, 2, 3, 4, 5];
 // arr.pop();
 // console.log(arr);
@@ -29,16 +29,17 @@
 
 // 36. Find the index of a specific element in an array using indexOf().
 // let arr = [1, 2, 3, 4, 5];
-// console.log(arr.indexOf(2));
+// console.log(arr.indexOf(5));
 
-// 37. Check if a value exists in an array using include().
+// 37. Check if a value exists in an array using includes().
 // let arr = [1, 2, 3, 4, 5];
 // console.log(arr.includes(2));
 
 // 38. Combine two arrays [1, 2] and [3, 4] using concat().
 // let arr1 = [1, 2];
 // let arr2 = [3, 4] ;
-// console.log(arr1.concat(arr2));
+// let arr3 = [5, 6] ;
+// console.log(arr1.concat(arr2, arr3));
 
 // 39. Sort an array of numbers [5, 2, 9, 1] in ascending order.
 // Method 1 :- Using Bubble Sort

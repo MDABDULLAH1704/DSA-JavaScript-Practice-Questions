@@ -6,11 +6,11 @@
 //     }, 2000);
 // }
 
-// function callback2() {
-//     console.log("Hi, I am callback");
+// function callback() {
+//         console.log("Hi, I am callback");
 // }
 
-// callbackFunction(callback2);
+// callbackFunction(callback);
 
 
 
@@ -49,12 +49,12 @@
 
 
 // 4. Write a function that accepts two numbers and a callback. The function should perform a mathematical operation on the numbers and pass the result to the callback.
-function main(a, b, callback) {
-    let number = a + b;
-    let result = callback(number);
-    console.log(result);
-}
+// function main(a, b, callback) {
+//     let number = a + b;
+//     let result = callback(number);
+//     console.log(result);
+// }
 
-main(3, 2, function name(number) {
-    return number * 2;
-})
+// main(3, 2, function name(number) {
+//     return number * 2;
+// })

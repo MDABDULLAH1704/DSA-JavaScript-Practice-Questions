@@ -1,6 +1,6 @@
 // 1. How can you use setTimeout to create a simple delayed alert message? Provide a code example where an alert is displayed after a delay of 3 seconds.
 // setTimeout(() => {
-//     // alert("hello");
+//     alert("hello");
 //     console.log("Hello World");
 // }, 2000);
 

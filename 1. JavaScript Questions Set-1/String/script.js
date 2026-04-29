@@ -3,7 +3,7 @@
 //     return string.split('').reverse().join('');
 // }
 
-// let str = "Hello JavaScript";
+// let str = " JavaScript";
 // let result = reverse(str);
 // console.log(result);
 
@@ -52,10 +52,29 @@
 
 
 // 5. Write a function to remove duplicate characters from a string.
-function duplicate(string) {
-    return string.split('').filter((char, index, self) => self.indexOf(char) === index).join('');
-}
+// Method 1
+// function duplicate(string) {
+//     return string.split('').filter((char, index, self) => self.indexOf(char) === index).join('');
+// }
 
-let str = "hii";
-let result = duplicate(str);
-console.log(result);
+// let str1 = "hii";
+// let result1 = duplicate(str1);
+// console.log(result1);
+
+
+
+// Method 2
+// function duplicate(string) {
+//     let Arr = string.split('');
+//     let newArr = [];
+//     for (let i = 0; i < Arr.length; i++) {
+//         if (!newArr.includes(Arr[i])) {
+//             newArr.push(Arr[i]);
+//         }
+//     }
+//     return newArr.join('');
+// }
+
+// let str2 = "hii";
+// let result2 = duplicate(str2);
+// console.log(result2);

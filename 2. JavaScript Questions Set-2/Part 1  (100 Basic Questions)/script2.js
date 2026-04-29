@@ -29,7 +29,7 @@ console.log(d, e, f);
 
 // 18. Declare a variable without assigning a value, log its type.
 let g;
-console.log(typeof(g));
+console.log(typeof(g));3
 
 // 19. Create a variable with undefined and log its type.
 let h = undefined;

@@ -70,8 +70,8 @@
 // revString("AliBabu")
 
 // 48. Create a function to find the largest number in an array.
+// First method could be sorting.
 // function findLargeNumInArr(arr) {
-//     // First method could be sorting.
 //     let max = 0;
 //     for (let i = 0; i < arr.length; i++) {
 //         if (arr[i] > arr[max]) {

@@ -26,7 +26,7 @@
 //     }
 //     return smallest;
 // }
-// console.log(findSmallestNum([1, 2, 3, 4, 5]));
+// console.log(findSmallestNum([11, 2, 3, 4, 5]));
 // Method 2
 // function findSmallestNum(arr) {
 //     return Math.min(...arr);
@@ -103,7 +103,7 @@
 //     }
 //     return result;
 // }
-// console.log(retUniqueVal([1, 2, 1, 2, 3, 4]));
+// console.log(retUniqueVal([5, 2, 1, 2, 1, 2, 3, 4]));
 // Method 2
 // function retUniqueVal(arr) {
 //     return [...new Set(arr)];
@@ -113,33 +113,6 @@
 
 
 // 97. Write a program to merge two sorted arrays into one sorted array.
-// function mergeTwoSortedArray(arr1, arr2) {
-//     let mergedArray = [];
-//     let i = 0, j = 0;
-//     // Traverse both arrays and compare elements
-//     while (i < arr1.length && j < arr2.length) {
-//         if (arr1[i] < arr2[j]) {
-//             mergedArray.push(arr1[i]);
-//             i++;
-//         } else {
-//             mergedArray.push(arr2[j]);
-//             j++;
-//         }
-//     }
-//     // Add remaining elements of arr1 (if any)
-//     while (i < arr1.length) {
-//         mergedArray.push(arr1[i]);
-//         i++;
-//     }
-//     // Add remaining elements of arr2 (if any)
-//     while (j < arr2.length) {
-//         mergedArray.push(arr2[j]);
-//         j++;
-//     }
-//     return mergedArray;
-// }
-// console.log(mergeTwoSortedArray([1, 3, 5], [2, 4, 6]));
-// console.log(mergeTwoSortedArray([2, 4, 6], [1, 3, 5]));
 
 
 

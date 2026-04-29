@@ -10,7 +10,7 @@
 
 // 52. Create a program to check if a year is a leap year.
 // function checkLeapYear(year) {
-//     if (year % 4 === 0 && year % 100 !== 0 || year % 400 === 0) return 'Leap year';
+//     if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) return 'Leap year';
 //     else return 'Not leap year';
 // }
 // console.log(checkLeapYear(2018));
@@ -23,7 +23,7 @@
 //     if (age >= 18) return 'Person can vote';
 //     else return 'Person cannot vote';
 // }
-// console.log(vote(17));
+// console.log(vote(19));
 
 // 54. Use switch statement to log the name of the day based on its number (1 = Monday).
 // function getDayName(key) {
@@ -112,23 +112,8 @@
 //     console.log('n3 is largest');
 // }
 // Method 2
-// let n1 = 12;
-// let n2 = 13;
-// let n3 = 13;
-// if (n1 === n2 && n2 === n3) {
-//     console.log('All three numbers are equal');
-// }
-// else if (n1 >= n2 && n1 >= n3 && n1 !== n2 && n1 !== n3) {
-//     console.log('n1 is largest');
-// }
-// else if (n2 >= n1 && n2 >= n3 && n2 !== n1 && n2 !== n3) {
-//     console.log('n2 is largest');
-// }
-// else if (n3 >= n1 && n3 >= n2 && n3 !== n1 && n3 !== n2) {
-//     console.log('n3 is largest');
-// } else {
-//     console.log('There is a tie for the largest number');
-// }
+// let max = Math.max(n1, n2, n3);
+// console.log(max);
 
 // 60. Create a program to calculate the discount based on the price of an item.
 // function calculateDiscount(price) {
@@ -144,8 +129,6 @@
 
 //     const discountAmount = price * discount;
 //     const finalPrice = price - discountAmount;
-
 //     return finalPrice;
 // }
 // console.log(calculateDiscount(150));
-

@@ -47,7 +47,7 @@
 // console.log(str.replace('JavaScript', 'JS'));
 
 // 77. Repeat a string 3 times using .repeat().    
-// let str = 'javascript';
+// let str = 'javascript ';
 // console.log(str.repeat(3));
 
 // 78. Create a function that check if a string contains a specific word.   
@@ -57,7 +57,7 @@
 // console.log(checkWord('how are you all', 'all'));
 
 // 79. Write a program to remove whitespace from both ends of a string.          
-// let str = 'hi   how are     you      .';
+// let str = 'hi   how are     you.';
 // console.log(str.replace(/\s+/g, ' '));
 
 // 80. Create a function to count the number of vowels in a string.        

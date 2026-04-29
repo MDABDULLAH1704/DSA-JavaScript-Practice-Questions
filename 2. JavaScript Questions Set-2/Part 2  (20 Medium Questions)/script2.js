@@ -1,10 +1,10 @@
 // 6. Write a javascript function that reverse a number.
 // Method 1
 // function revNumber(val) {
-//     let result = Number(val.toString().split('').reverse().join(''));
+//     let result = val.toString().split('').reverse().join('');
 //     console.log(result);
 // }
-// revNumber(1234);
+// revNumber('123400');
 // Method 2
 // function revNumber(val) {
 //     let result = val.toString().split('');
@@ -13,16 +13,16 @@
 //         result[i] = result[result.length - 1 - i];
 //         result[result.length - 1 - i] = temp;
 //     }
-//     console.log(Number(result.join('')));
+//     console.log(result.join(''));
 // }
-// revNumber(123456);
+// revNumber(12345600);
 // Method 3
 // function revNumber(num) {
 //     let rev = 0;
 //     while (num > 0) {
 //         let rem = num % 10;
-//         rev = rev * 10 + rem;
 //         num = Math.floor(num / 10);
+//         rev = rev * 10 + rem;
 //     }
 //     return rev;
 // }
@@ -32,11 +32,11 @@
 //     let result = val.toString().split('');
 //     for (let i = 0; i < Math.floor(result.length / 2); i++) {
 //         let j = result.length - 1 - i;
-//         [result[i], result[j]] = [result[j], result[i]];
+//         [result[i], result[j]] = [result[j], result[i]]; // Using Destructuring
 //     }
-//     console.log(Number(result.join('')));
+//     console.log(result.join(''));
 // }
-// revNumber(123456);
+// revNumber(12345600);
 
 
 
